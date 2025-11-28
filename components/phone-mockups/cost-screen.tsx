@@ -9,7 +9,8 @@ export function CostScreen() {
     { name: "Deep Freezer", percent: 18, amount: "₦1,800", color: "from-sky-500 to-sky-400" },
     { name: "Water Pump", percent: 15, amount: "₦1,500", color: "from-blue-500 to-blue-400" },
     { name: "Refrigerator", percent: 12, amount: "₦1,200", color: "from-emerald-500 to-emerald-400" },
-    { name: "Other", percent: 23, amount: "₦2,300", color: "from-slate-400 to-slate-300" },
+    { name: "Television", percent: 14, amount: "₦1,400", color: "from-violet-500 to-violet-400" },
+    { name: "Fan", percent: 9, amount: "₦900", color: "from-amber-500 to-amber-400" },
   ]
 
   return (
@@ -91,32 +92,12 @@ export function CostScreen() {
               </div>
             </motion.div>
 
-            {/* Daily Spend */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.15 }}
-              className="bg-white rounded-2xl p-3 mb-3 shadow-sm"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-[9px] text-slate-500">Today's Spend</p>
-                  <p className="text-lg font-bold text-slate-900">₦1,240</p>
-                </div>
-                <div className="flex items-center gap-1 text-emerald-500">
-                  <TrendingUp size={14} />
-                  <span className="text-[10px] font-medium">12% less than avg</span>
-                </div>
-              </div>
-            </motion.div>
-
             {/* Breakdown List */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.15 }}
               className="bg-white rounded-2xl p-3 shadow-sm flex-1"
             >
               <div className="flex items-center justify-between mb-2">
@@ -131,7 +112,7 @@ export function CostScreen() {
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
+                    transition={{ duration: 0.4, delay: 0.2 + i * 0.06 }}
                   >
                     <div className="flex items-center justify-between mb-1">
                       <span className="text-slate-700 font-medium text-[10px]">{item.name}</span>
@@ -146,11 +127,40 @@ export function CostScreen() {
                         initial={{ width: 0 }}
                         whileInView={{ width: `${item.percent}%` }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.4 + i * 0.06 }}
+                        transition={{ duration: 0.6, delay: 0.3 + i * 0.06 }}
                       />
                     </div>
                   </motion.div>
                 ))}
+              </div>
+            </motion.div>
+
+            {/* Budget Alert - Subtle */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.6 }}
+              className="bg-amber-50/50 rounded-xl p-2.5 shadow-sm border border-amber-100 mt-3"
+            >
+              <div className="flex items-center gap-2 mb-1.5">
+                <div className="w-5 h-5 bg-amber-100 rounded-md flex items-center justify-center shrink-0">
+                  <Bell size={10} className="text-amber-600" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-[9px] text-slate-700 leading-tight">
+                    <span className="font-semibold">AC Budget:</span> ₦1,200/₦1,500 used this week
+                  </p>
+                </div>
+              </div>
+              <div className="h-1 bg-amber-200/50 rounded-full overflow-hidden ml-7">
+                <motion.div
+                  className="h-full bg-amber-500 rounded-full"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "80%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
+                />
               </div>
             </motion.div>
           </div>

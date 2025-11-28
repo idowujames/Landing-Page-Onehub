@@ -167,27 +167,6 @@ export function DeviceDetailScreen() {
                 </div>
               </div>
             </motion.div>
-
-            {/* Tip Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="bg-amber-50 rounded-xl p-2.5 border border-amber-100 mt-2"
-            >
-              <div className="flex items-start gap-2">
-                <div className="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center shrink-0">
-                  <Lightbulb size={12} className="text-amber-600" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-semibold text-amber-800">Savings Tip</p>
-                  <p className="text-[9px] text-amber-700 leading-relaxed">
-                    Set AC to 24°C instead of 18°C to save ₦2,100/month
-                  </p>
-                </div>
-              </div>
-            </motion.div>
           </div>
 
           {/* Bottom Navigation */}
