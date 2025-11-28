@@ -134,7 +134,7 @@ export function DeviceDetailScreen() {
               {/* Animated Bar Chart */}
               <div className="flex items-end gap-2 h-16 mb-2">
                 {barHeights.map((height, i) => (
-                  <div key={i} className="flex-1 flex flex-col items-center">
+                  <div key={i} className="flex-1 flex flex-col items-center justify-end h-full">
                     <motion.div
                       className="w-full bg-gradient-to-t from-primary to-primary/60 rounded-t-sm"
                       initial={{ height: 0 }}
