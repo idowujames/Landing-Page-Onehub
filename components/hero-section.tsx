@@ -1,13 +1,14 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Zap, Shield, Wifi } from "lucide-react"
+import { ScrollReveal } from "@/components/ui/scroll-reveal"
 
 export function HeroSection() {
   return (
     <section className="pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <ScrollReveal className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <Zap className="h-4 w-4" />
               <span>Smart Energy for Nigerian Homes</span>
@@ -46,9 +47,9 @@ export function HeroSection() {
                 <span>Real-time Data</span>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
-          <div className="relative">
+          <ScrollReveal delay={0.2} className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl blur-3xl" />
             <div className="relative bg-gradient-to-br from-secondary to-muted rounded-3xl p-8 md:p-12">
               <Image
@@ -60,7 +61,7 @@ export function HeroSection() {
                 priority
               />
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

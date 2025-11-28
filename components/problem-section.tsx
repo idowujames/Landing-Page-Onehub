@@ -1,4 +1,5 @@
 import { AlertTriangle, Eye, Plug, Layers } from "lucide-react"
+import { ScrollReveal } from "@/components/ui/scroll-reveal"
 
 const problems = [
   {
@@ -30,27 +31,26 @@ export function ProblemSection() {
   return (
     <section className="py-16 md:py-24 bg-secondary/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 md:mb-16">
+        <ScrollReveal className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
             Energy Management Shouldn't Be This Hard
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Nigerian households and businesses face unique challenges that traditional solutions don't address.
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((problem, index) => (
-            <div
-              key={index}
-              className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-colors"
-            >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <problem.icon className="h-6 w-6 text-primary" />
+            <ScrollReveal key={index} delay={index * 0.1}>
+              <div className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <problem.icon className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-lg text-foreground mb-2">{problem.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{problem.description}</p>
               </div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">{problem.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{problem.description}</p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

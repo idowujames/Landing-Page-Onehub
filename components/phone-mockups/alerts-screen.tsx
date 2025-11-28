@@ -83,7 +83,8 @@ export function AlertsScreen() {
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               className="flex justify-between items-center mb-4"
             >
@@ -93,7 +94,8 @@ export function AlertsScreen() {
               </div>
               <motion.div
                 initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.3, type: "spring" }}
                 className="relative w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center"
               >
@@ -111,7 +113,8 @@ export function AlertsScreen() {
             {/* Filter Tabs */}
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.15 }}
               className="flex gap-2 mb-4"
             >
@@ -127,13 +130,15 @@ export function AlertsScreen() {
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
                   className={`${alert.cardBg} p-3 rounded-xl flex items-start gap-2.5 border ${alert.borderColor}`}
                 >
                   <motion.div
                     initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{ delay: 0.2 + i * 0.08, type: "spring" }}
                     className={`w-8 h-8 ${alert.iconBg} rounded-lg flex items-center justify-center shrink-0 shadow-sm`}
                   >
@@ -153,7 +158,8 @@ export function AlertsScreen() {
             {/* Quick Settings */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="mt-3"
             >
@@ -185,7 +191,8 @@ export function AlertsScreen() {
           <div className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-slate-200 flex items-center justify-around px-4 rounded-b-[2.5rem]">
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -194,7 +201,8 @@ export function AlertsScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.55 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -203,7 +211,8 @@ export function AlertsScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -212,7 +221,8 @@ export function AlertsScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.65 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -221,7 +231,8 @@ export function AlertsScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.7 }}
               className="flex flex-col items-center gap-0.5"
             >

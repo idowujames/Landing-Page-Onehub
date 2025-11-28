@@ -94,7 +94,8 @@ export function DevicesScreen() {
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               className="flex justify-between items-center mb-4"
             >
@@ -113,7 +114,8 @@ export function DevicesScreen() {
             {/* Active Summary */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.1 }}
               className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-3 mb-4 text-white"
             >
@@ -135,7 +137,8 @@ export function DevicesScreen() {
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.15 + i * 0.06 }}
                   className="bg-white p-3 rounded-xl flex items-center gap-3 shadow-sm"
                 >
@@ -166,7 +169,8 @@ export function DevicesScreen() {
             {/* Add Device Button */}
             <motion.button
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="w-full mt-3 py-2.5 border-2 border-dashed border-slate-200 rounded-xl text-slate-400 text-[11px] font-medium flex items-center justify-center gap-1.5"
             >
@@ -179,7 +183,8 @@ export function DevicesScreen() {
           <div className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-slate-200 flex items-center justify-around px-4 rounded-b-[2.5rem]">
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -188,7 +193,8 @@ export function DevicesScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.55 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -197,7 +203,8 @@ export function DevicesScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -206,7 +213,8 @@ export function DevicesScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.65 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -215,7 +223,8 @@ export function DevicesScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.7 }}
               className="flex flex-col items-center gap-0.5"
             >

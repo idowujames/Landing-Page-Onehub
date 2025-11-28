@@ -37,7 +37,8 @@ export function SmartDetectionScreen() {
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               className="flex justify-between items-center mb-4"
             >
@@ -53,7 +54,8 @@ export function SmartDetectionScreen() {
             {/* Main Usage Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-4 text-white mb-4 shadow-lg shadow-primary/30 relative overflow-hidden"
             >
@@ -64,7 +66,8 @@ export function SmartDetectionScreen() {
                   <div className="flex items-baseline gap-1">
                     <motion.span
                       initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
                       transition={{ duration: 0.6, delay: 0.3 }}
                       className="text-3xl font-bold"
                     >
@@ -96,7 +99,8 @@ export function SmartDetectionScreen() {
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
                     className="bg-white p-2.5 rounded-xl flex items-center justify-between shadow-sm"
                   >
@@ -116,7 +120,8 @@ export function SmartDetectionScreen() {
             {/* Floating Alert */}
             <motion.div
               initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.8, duration: 0.5, type: "spring" }}
               className="mt-3 bg-slate-900 text-white p-2.5 rounded-xl flex items-center gap-2.5"
             >
@@ -134,7 +139,8 @@ export function SmartDetectionScreen() {
           <div className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-slate-200 flex items-center justify-around px-4 rounded-b-[2.5rem]">
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -143,7 +149,8 @@ export function SmartDetectionScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.55 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -152,7 +159,8 @@ export function SmartDetectionScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -161,7 +169,8 @@ export function SmartDetectionScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.65 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -170,7 +179,8 @@ export function SmartDetectionScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.7 }}
               className="flex flex-col items-center gap-0.5"
             >

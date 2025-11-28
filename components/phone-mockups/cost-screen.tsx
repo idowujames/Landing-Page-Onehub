@@ -38,7 +38,8 @@ export function CostScreen() {
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               className="flex justify-between items-center mb-4"
             >
@@ -54,7 +55,8 @@ export function CostScreen() {
             {/* Prepaid Balance Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-4 text-white mb-3 shadow-lg shadow-primary/30 relative overflow-hidden"
             >
@@ -65,7 +67,8 @@ export function CostScreen() {
               </div>
               <motion.p
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-3xl font-bold mb-0.5"
               >
@@ -77,7 +80,8 @@ export function CostScreen() {
                 <motion.div
                   className="h-full bg-white rounded-full"
                   initial={{ width: 0 }}
-                  animate={{ width: "42%" }}
+                  whileInView={{ width: "42%" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 />
               </div>
@@ -90,7 +94,8 @@ export function CostScreen() {
             {/* Daily Spend */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.15 }}
               className="bg-white rounded-2xl p-3 mb-3 shadow-sm"
             >
@@ -109,7 +114,8 @@ export function CostScreen() {
             {/* Breakdown List */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="bg-white rounded-2xl p-3 shadow-sm flex-1"
             >
@@ -123,7 +129,8 @@ export function CostScreen() {
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
                   >
                     <div className="flex items-center justify-between mb-1">
@@ -137,7 +144,8 @@ export function CostScreen() {
                       <motion.div
                         className={`h-full bg-gradient-to-r ${item.color} rounded-full`}
                         initial={{ width: 0 }}
-                        animate={{ width: `${item.percent}%` }}
+                        whileInView={{ width: `${item.percent}%` }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 + i * 0.06 }}
                       />
                     </div>
@@ -151,7 +159,8 @@ export function CostScreen() {
           <div className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-slate-200 flex items-center justify-around px-4 rounded-b-[2.5rem]">
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -160,7 +169,8 @@ export function CostScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.55 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -169,7 +179,8 @@ export function CostScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -178,7 +189,8 @@ export function CostScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.65 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -187,7 +199,8 @@ export function CostScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.7 }}
               className="flex flex-col items-center gap-0.5"
             >

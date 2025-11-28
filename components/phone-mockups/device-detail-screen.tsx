@@ -45,7 +45,8 @@ export function DeviceDetailScreen() {
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               className="flex items-center justify-between mb-3"
             >
@@ -59,13 +60,15 @@ export function DeviceDetailScreen() {
             {/* Device Icon & Name */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.1 }}
               className="flex flex-col items-center py-4 bg-white rounded-2xl shadow-sm mb-3"
             >
               <motion.div
                 initial={{ scale: 0.8 }}
-                animate={{ scale: 1 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.2, type: "spring" }}
                 className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mb-2 shadow-lg shadow-primary/20"
               >
@@ -87,7 +90,8 @@ export function DeviceDetailScreen() {
             <div className="grid grid-cols-2 gap-2 mb-3">
               <motion.div
                 initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
                 className="bg-white rounded-xl p-3 shadow-sm"
               >
@@ -99,7 +103,8 @@ export function DeviceDetailScreen() {
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
                 className="bg-white rounded-xl p-3 shadow-sm"
               >
@@ -112,7 +117,8 @@ export function DeviceDetailScreen() {
             {/* Usage Chart */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.3 }}
               className="bg-white rounded-xl p-3 shadow-sm flex-1"
             >
@@ -132,7 +138,8 @@ export function DeviceDetailScreen() {
                     <motion.div
                       className="w-full bg-gradient-to-t from-primary to-primary/60 rounded-t-sm"
                       initial={{ height: 0 }}
-                      animate={{ height: `${height}%` }}
+                      whileInView={{ height: `${height}%` }}
+                      viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: 0.4 + i * 0.05 }}
                     />
                   </div>
@@ -164,7 +171,8 @@ export function DeviceDetailScreen() {
             {/* Tip Card */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="bg-amber-50 rounded-xl p-2.5 border border-amber-100 mt-2"
             >
@@ -186,7 +194,8 @@ export function DeviceDetailScreen() {
           <div className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-slate-200 flex items-center justify-around px-4 rounded-b-[2.5rem]">
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -195,7 +204,8 @@ export function DeviceDetailScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.55 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -204,7 +214,8 @@ export function DeviceDetailScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -213,7 +224,8 @@ export function DeviceDetailScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.65 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -222,7 +234,8 @@ export function DeviceDetailScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.7 }}
               className="flex flex-col items-center gap-0.5"
             >

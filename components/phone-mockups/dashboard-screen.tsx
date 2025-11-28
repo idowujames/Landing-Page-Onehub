@@ -30,7 +30,8 @@ export function DashboardScreen() {
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.4 }}
               className="flex justify-between items-center mb-4"
             >
@@ -46,7 +47,8 @@ export function DashboardScreen() {
             {/* Usage Comparison Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white rounded-2xl p-4 mb-3 shadow-sm"
             >
@@ -87,7 +89,8 @@ export function DashboardScreen() {
                     stroke="#e5e7eb"
                     strokeWidth="2"
                     initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
+                    whileInView={{ pathLength: 1 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.3 }}
                   />
                   <motion.path
@@ -96,7 +99,8 @@ export function DashboardScreen() {
                     stroke="hsl(var(--primary))"
                     strokeWidth="2.5"
                     initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
+                    whileInView={{ pathLength: 1 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.5 }}
                   />
                   <motion.circle
@@ -105,7 +109,8 @@ export function DashboardScreen() {
                     r="4"
                     fill="hsl(var(--primary))"
                     initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
                     transition={{ delay: 1.3 }}
                   />
                 </svg>
@@ -115,7 +120,8 @@ export function DashboardScreen() {
             {/* Power Sources Card */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="bg-white rounded-2xl p-4 shadow-sm mb-3"
             >
@@ -128,19 +134,22 @@ export function DashboardScreen() {
                 <motion.div
                   className="h-full bg-emerald-500 rounded-l-full"
                   initial={{ width: 0 }}
-                  animate={{ width: "45%" }}
+                  whileInView={{ width: "45%" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 />
                 <motion.div
                   className="h-full bg-amber-500"
                   initial={{ width: 0 }}
-                  animate={{ width: "35%" }}
+                  whileInView={{ width: "35%" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.5 }}
                 />
                 <motion.div
                   className="h-full bg-sky-500 rounded-r-full"
                   initial={{ width: 0 }}
-                  animate={{ width: "20%" }}
+                  whileInView={{ width: "20%" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 />
               </div>
@@ -172,7 +181,8 @@ export function DashboardScreen() {
               <motion.div
                 className="bg-white rounded-2xl p-3"
                 initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
               >
                 <p className="text-[9px] text-slate-500 mb-0.5">Grid Uptime</p>
@@ -182,7 +192,8 @@ export function DashboardScreen() {
               <motion.div
                 className="bg-white rounded-2xl p-3"
                 initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.6 }}
               >
                 <p className="text-[9px] text-slate-500 mb-0.5">Top Consumer</p>
@@ -192,7 +203,8 @@ export function DashboardScreen() {
               <motion.div
                 className="bg-white rounded-2xl p-3"
                 initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.7 }}
               >
                 <p className="text-[9px] text-slate-500 mb-0.5">Gen Fuel Cost</p>
@@ -202,7 +214,8 @@ export function DashboardScreen() {
               <motion.div
                 className="bg-white rounded-2xl p-3"
                 initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.8 }}
               >
                 <p className="text-[9px] text-slate-500 mb-0.5">Grid Outages Today</p>
@@ -216,7 +229,8 @@ export function DashboardScreen() {
           <div className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-slate-200 flex items-center justify-around px-4 rounded-b-[2.5rem]">
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -225,7 +239,8 @@ export function DashboardScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.55 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -234,7 +249,8 @@ export function DashboardScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.6 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -243,7 +259,8 @@ export function DashboardScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.65 }}
               className="flex flex-col items-center gap-0.5"
             >
@@ -252,7 +269,8 @@ export function DashboardScreen() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.7 }}
               className="flex flex-col items-center gap-0.5"
             >
