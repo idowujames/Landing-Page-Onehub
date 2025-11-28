@@ -7,7 +7,7 @@ const steps = [
     icon: Plug,
     title: "Install at Your Breaker",
     description:
-      "Onehub installs easily at your main breaker. No invasive rewiring required—perfect for renters and homeowners alike.",
+      "Onehub installs easily at your main breaker. No invasive rewiring required. Perfect for renters and homeowners alike.",
   },
   {
     number: "02",
@@ -19,9 +19,9 @@ const steps = [
   {
     number: "03",
     icon: TrendingUp,
-    title: "Start Saving",
+    title: "Start Tracking",
     description:
-      "See real-time data on your dashboard. Get cost breakdowns, efficiency tips, and alerts—all from anywhere.",
+      "See real-time data on your dashboard. Get cost breakdowns, efficiency tips, and alerts anytime, anywhere.",
   },
 ]
 
