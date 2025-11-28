@@ -8,10 +8,10 @@ export function PricingSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <ScrollReveal className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-                        Simple, Transparent Pricing
+                        Own Your Energy Data
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Get complete control of your energy for less than the cost of a tank of fuel.
+                        Everything you need to start tracking and controlling your power consumption.
                     </p>
                 </ScrollReveal>
 
@@ -28,14 +28,11 @@ export function PricingSection() {
                                 <span className="text-4xl md:text-5xl font-bold text-foreground">₦120,000</span>
                                 <span className="text-lg text-muted-foreground line-through decoration-destructive/50">₦175,000</span>
                             </div>
-                            <p className="text-sm text-muted-foreground mb-8">
-                                One-time payment. No monthly fees.
-                            </p>
 
-                            <div className="space-y-4 text-left mb-8">
+                            <div className="space-y-4 text-left mb-8 mt-8">
                                 {[
                                     "Onehub Smart Energy Monitor",
-                                    "Lifetime Mobile App Access",
+                                    "Mobile App Access",
                                     "Real-time Remote Monitoring",
                                     "Grid & Generator Detection",
                                     "1-Year Hardware Warranty",
