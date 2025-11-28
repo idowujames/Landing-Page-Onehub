@@ -1,29 +1,29 @@
-import { AlertTriangle, Eye, Plug, Layers } from "lucide-react"
+import { Eye, Zap, Clock, TrendingDown } from "lucide-react"
 import { ScrollReveal } from "@/components/ui/scroll-reveal"
 
-const problems = [
+const benefits = [
   {
     icon: Eye,
-    title: "No Visibility",
+    title: "See Exactly What's Draining Your Units",
     description:
-      "Most Nigerians have no idea how much energy individual appliances consume or why prepaid units finish quickly.",
+      "Track every appliance in real-time. Know what your AC, freezer, and water pump cost you daily. No more guessing.",
   },
   {
-    icon: AlertTriangle,
-    title: "Unpredictable Outages",
-    description: "Nigeria's grid suffers frequent outages, making it impossible to plan around power availability.",
+    icon: Zap,
+    title: "Never Be Caught Off Guard",
+    description: "Check if grid was available while you were away. Know when your inverter charged and how long the generator ran.",
   },
   {
-    icon: Plug,
-    title: "Complex Installations",
+    icon: Clock,
+    title: "Set Up in Minutes, Not Hours",
     description:
-      "Existing monitoring systems require invasive wiring changes and cost more than most households can afford.",
+      "Install at your main breaker with no invasive wiring. Perfect for renters and homeowners alike. Start tracking immediately.",
   },
   {
-    icon: Layers,
-    title: "Fragmented Systems",
+    icon: TrendingDown,
+    title: "One App for Everything",
     description:
-      "Inverters, solar panels, generators—each has its own app. None provide a unified view of your energy.",
+      "Grid, generator, inverter, solar—all in one place. No more juggling multiple apps. Complete visibility, simplified.",
   },
 ]
 
@@ -33,22 +33,22 @@ export function ProblemSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            Energy Management Shouldn't Be This Hard
+            See Everything That Matters in One View
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nigerian households and businesses face unique challenges that traditional solutions don't address.
+            Track costs, plan your day, and reduce your energy bill—all without changing your lifestyle.
           </p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {problems.map((problem, index) => (
+          {benefits.map((benefit, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
               <div className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <problem.icon className="h-6 w-6 text-primary" />
+                  <benefit.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-lg text-foreground mb-2">{problem.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{problem.description}</p>
+                <h3 className="font-semibold text-lg text-foreground mb-2">{benefit.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
               </div>
             </ScrollReveal>
           ))}

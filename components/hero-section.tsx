@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Zap, Shield, Wifi } from "lucide-react"
+import { ArrowRight, Zap, Shield, Wifi, Users } from "lucide-react"
 import { ScrollReveal } from "@/components/ui/scroll-reveal"
 
 export function HeroSection() {
@@ -10,22 +10,21 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <ScrollReveal className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-              <Zap className="h-4 w-4" />
-              <span>Smart Energy for Nigerian Homes</span>
+              <Users className="h-4 w-4" />
+              <span>Limited Early Units Available</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              Know Where Your <span className="text-primary">Energy</span> Goes
+              Your Light. Your Money. <span className="text-primary">Your Control.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-              Real-time visibility into your electricity consumption. Track every naira, understand your usage, and take
-              control of your energy costs.
+              Stop guessing where your prepaid units go. See exactly what each appliance costs you, track your power sources, and reduce your energy bill—all from one simple app.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="gap-2">
-                Pre-Order Now
+                Join the Waitlist
                 <ArrowRight className="h-4 w-4" />
               </Button>
               <Button size="lg" variant="outline">

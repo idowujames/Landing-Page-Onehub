@@ -1,11 +1,11 @@
+import { ScrollReveal } from "@/components/ui/scroll-reveal"
+
 const stats = [
   { value: "20-30%", label: "Average savings in 6 months" },
-  { value: "<30 min", label: "Time to first insight" },
-  { value: "7 days", label: "Offline data storage" },
+  { value: "<30 min", label: "Setup to first insight" },
   { value: "24/7", label: "Real-time monitoring" },
+  { value: "All Sources", label: "Grid, Solar, Generator, Inverter" },
 ]
-
-import { ScrollReveal } from "@/components/ui/scroll-reveal"
 
 export function StatsSection() {
   return (

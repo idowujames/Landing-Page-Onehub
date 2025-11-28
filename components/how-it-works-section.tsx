@@ -7,21 +7,21 @@ const steps = [
     icon: Plug,
     title: "Install at Your Breaker",
     description:
-      "The Onehub device installs easily at your main breaker. No invasive rewiring required—perfect for renters and homeowners alike.",
+      "Onehub installs easily at your main breaker. No invasive rewiring required—perfect for renters and homeowners alike.",
   },
   {
     number: "02",
     icon: Smartphone,
     title: "Calibrate Your Appliances",
     description:
-      "Use the guided app wizard to 'teach' Onehub your appliances. Turn them on one by one and tag each signature in the system.",
+      "Use the guided app wizard to 'teach' Onehub your appliances. Turn them on one by one and tag each in the system.",
   },
   {
     number: "03",
     icon: TrendingUp,
     title: "Start Saving",
     description:
-      "See real-time data on your dashboard. Get cost breakdowns, efficiency tips, and alerts—all in Naira, all from anywhere.",
+      "See real-time data on your dashboard. Get cost breakdowns, efficiency tips, and alerts—all from anywhere.",
   },
 ]
 
