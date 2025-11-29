@@ -8,10 +8,10 @@ export function PricingSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <ScrollReveal className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-                        Own Your Energy Data
+                        Get Early Bird Offer
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Everything you need to start tracking and controlling your power consumption.
+                        Get early access and be one of the first to get Onehub.
                     </p>
                 </ScrollReveal>
 

@@ -52,7 +52,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl blur-3xl" />
             <div className="relative bg-gradient-to-br from-secondary to-muted rounded-3xl p-8 md:p-12">
               <Image
-                src="/images/device-20render-4.jpeg"
+                src="/images/device-render.png"
                 alt="Onehub Smart Energy Monitor"
                 width={500}
                 height={600}
