@@ -153,9 +153,9 @@ export function DevicesScreen() {
                   </div>
                   <div className="text-right flex items-center gap-2">
                     <div>
-                      <p className={`font-bold text-[11px] ${device.isActive ? "text-primary" : "text-slate-300"}`}>
+                      {/* <p className={`font-bold text-[11px] ${device.isActive ? "text-primary" : "text-slate-300"}`}>
                         {device.watts}
-                      </p>
+                      </p> */}
                       <p className={`text-[9px] ${device.isActive ? "text-emerald-500" : "text-slate-400"}`}>
                         {device.status}
                       </p>
