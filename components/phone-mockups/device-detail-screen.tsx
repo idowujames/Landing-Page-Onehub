@@ -108,7 +108,7 @@ export function DeviceDetailScreen() {
                 transition={{ delay: 0.3 }}
                 className="bg-white rounded-xl p-3 shadow-sm"
               >
-                <p className="text-[9px] text-primary uppercase font-bold tracking-wider mb-0.5">Monthly Cost</p>
+                <p className="text-[9px] text-primary uppercase font-bold tracking-wider mb-0.5">AVG. Monthly Cost</p>
                 <p className="text-xl font-bold text-slate-900 leading-none">₦8,400</p>
                 <p className="text-[9px] text-slate-500">this month</p>
               </motion.div>
@@ -145,9 +145,14 @@ export function DeviceDetailScreen() {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-between text-[8px] text-slate-400 font-medium">
+              <div className="flex justify-between text-[8px] font-medium">
                 {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
-                  <span key={i}>{d}</span>
+                  <span
+                    key={i}
+                    className={i === 2 ? "text-primary font-bold" : "text-slate-400"}
+                  >
+                    {d}
+                  </span>
                 ))}
               </div>
 

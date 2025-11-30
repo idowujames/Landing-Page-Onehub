@@ -26,6 +26,7 @@ export function DevicesScreen() {
       room: "Living Room",
       watts: "1,450W",
       status: "Running",
+      runtime: "2h 34m",
       icon: Wind,
       color: "bg-primary",
       isActive: true,
@@ -35,6 +36,7 @@ export function DevicesScreen() {
       room: "Kitchen",
       watts: "320W",
       status: "Running",
+      runtime: "18h 12m",
       icon: Snowflake,
       color: "bg-sky-500",
       isActive: true,
@@ -53,6 +55,7 @@ export function DevicesScreen() {
       room: "Sitting Room",
       watts: "120W",
       status: "Running",
+      runtime: "4h 50m",
       icon: Tv,
       color: "bg-violet-500",
       isActive: true,
@@ -62,6 +65,7 @@ export function DevicesScreen() {
       room: "Sitting Room",
       watts: "180W",
       status: "Running",
+      runtime: "8h 12m",
       icon: Lightbulb,
       color: "bg-amber-500",
       isActive: true,
@@ -159,6 +163,11 @@ export function DevicesScreen() {
                       <p className={`text-[9px] ${device.isActive ? "text-emerald-500" : "text-slate-400"}`}>
                         {device.status}
                       </p>
+                      {device.isActive && device.runtime && (
+                        <p className="text-[9px] text-slate-400">
+                          {device.runtime}
+                        </p>
+                      )}
                     </div>
                     <ChevronRight size={14} className="text-slate-300" />
                   </div>
