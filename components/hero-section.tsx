@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Zap, ShieldCheck, Wifi } from "lucide-react"
@@ -32,9 +33,11 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="h-12 px-8 text-base gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all">
-                Join the Waitlist
-                <ArrowRight className="h-4 w-4" />
+              <Button size="lg" className="h-12 px-8 text-base gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all" asChild>
+                <Link href="#cta">
+                  Join the Waitlist
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="h-12 px-8 text-base bg-white/50 backdrop-blur-sm hover:bg-white/80">
                 Watch Demo

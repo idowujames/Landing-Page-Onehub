@@ -32,16 +32,18 @@ export function Header() {
             <Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
-            <Link href="#support" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Support
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              Log In
+            <Button variant="ghost" size="sm" asChild>
+              <Link href="#cta">Log In</Link>
             </Button>
-            <Button size="sm">Pre-Order Now</Button>
+            <Button size="sm" asChild>
+              <Link href="#pricing">Pre-Order Now</Link>
+            </Button>
           </div>
 
           <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
@@ -64,14 +66,16 @@ export function Header() {
               <Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </Link>
-              <Link href="#support" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Support
               </Link>
               <div className="flex flex-col gap-2 pt-4">
-                <Button variant="ghost" size="sm">
-                  Log In
+                <Button variant="ghost" size="sm" asChild>
+                  <Link href="#cta">Log In</Link>
                 </Button>
-                <Button size="sm">Pre-Order Now</Button>
+                <Button size="sm" asChild>
+                  <Link href="#pricing">Pre-Order Now</Link>
+                </Button>
               </div>
             </nav>
           </div>

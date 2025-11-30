@@ -1,10 +1,11 @@
+import Link from "next/link"
 import { Check, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ScrollReveal } from "@/components/ui/scroll-reveal"
 
 export function PricingSection() {
     return (
-        <section className="py-20 md:py-32 bg-secondary/30">
+        <section id="pricing" className="py-20 md:py-32 bg-secondary/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <ScrollReveal className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
@@ -47,9 +48,11 @@ export function PricingSection() {
                                 ))}
                             </div>
 
-                            <Button size="lg" className="w-full gap-2">
-                                Secure Early Bird Price
-                                <Zap className="w-4 h-4" />
+                            <Button size="lg" className="w-full gap-2" asChild>
+                                <Link href="#cta">
+                                    Secure Early Bird Price
+                                    <Zap className="w-4 h-4" />
+                                </Link>
                             </Button>
                             <p className="text-xs text-muted-foreground mt-4">
                                 Limited units available for the first batch.
