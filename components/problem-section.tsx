@@ -33,7 +33,7 @@ export function ProblemSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="text-center mb-16 md:mb-24">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-            Total Visibility. <span className="text-primary">Total Control.</span>
+            Take Control of <span className="text-primary">Your Power.</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
             The first energy monitor built specifically for the Nigerian power reality.
