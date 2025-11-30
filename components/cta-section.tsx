@@ -16,6 +16,8 @@ export function CTASection() {
     setStatus("loading")
 
     // Simulate API call
+    // TODO: Replace this with actual email service integration
+    // Example: await fetch('https://formspree.io/f/YOUR_FORM_ID', { method: 'POST', body: JSON.stringify({ email }) })
     await new Promise((resolve) => setTimeout(resolve, 1500))
 
     console.log("Email submitted:", email)
